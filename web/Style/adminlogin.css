@@ -1,0 +1,6 @@
+.hoverad:hover{
+background-color: aliceblue;
+cursor: pointer;
+border: 2px solid rgb(153, 135, 135);
+}
+
