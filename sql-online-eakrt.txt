@@ -1,0 +1,59 @@
+SQL> select table_name from user_tables;
+
+TABLE_NAME
+------------------------------
+EKARTADMIN
+EKARTUSER
+EKARTCATEGORY
+EKARTUSERADDRESS
+EKARTPRODUCTS
+
+SQL> select * from ekartadmin;
+
+USERNAME             PASSWORD   DESIG
+-------------------- ---------- ----------
+nihal                nihal      student
+
+SQL> desc ekartadmin;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERNAME                                  NOT NULL VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(10)
+ DESIG                                              VARCHAR2(10)
+
+SQL> desc ekartuser;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERNAME                                  NOT NULL VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(10)
+ SURNAME                                            VARCHAR2(10)
+ MOBILE                                             NUMBER(10)
+ DOB                                                VARCHAR2(15)
+ GENDER                                             VARCHAR2(10)
+
+SQL> desc ekartcategory;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TYPE                                      NOT NULL VARCHAR2(50)
+ DESCP                                     NOT NULL VARCHAR2(100)
+
+SQL> desc ekartproducts;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PNAME                                              VARCHAR2(30)
+ PTYPE                                              VARCHAR2(30)
+ PDESC                                              VARCHAR2(100)
+ PIMG                                               VARCHAR2(150)
+ PID                                       NOT NULL VARCHAR2(30)
+ PPRICE                                             VARCHAR2(10)
+
+SQL> desc ekartuseraddress;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STATE                                              VARCHAR2(30)
+ DISTRICT                                           VARCHAR2(20)
+ PINCODE                                            VARCHAR2(8)
+ HOUSENO                                            VARCHAR2(40)
+ LANDMK                                             VARCHAR2(40)
+ TOTALPRICE                                         VARCHAR2(10)
+ NICKNAME                                           VARCHAR2(30)
