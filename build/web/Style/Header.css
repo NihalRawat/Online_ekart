@@ -1,0 +1,59 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navwi{
+    width: 98vw;
+    margin: 10px auto;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(102, 209, 49);
+    
+}
+.lo{
+    width: 20em;
+    height: auto;
+    
+    /* border: 2px solid black; */
+}
+
+.navbg{
+    background-color: aquamarine;
+    background-image: url(Images/login.jpg); 
+}
+button{
+    margin: 4px;
+}
+
+.home-list{
+    /* overflow: hidden;   Prevent hover state loss */
+    position: absolute;
+    
+    visibility: hidden;
+    z-index: 999;
+    margin-left: -1em;
+    
+    padding:0px;
+        font-size: 18px;
+        border-radius:10px;
+}
+
+.home-list li{
+    border: 1px solid rgb(188, 137, 137);
+    list-style-type: none;
+    /* border-radius:10px; */
+    
+    color: black;
+    padding: 5px;
+    margin-left: -2.5em;
+    
+    
+}
+.homee:hover .home-list li{
+    visibility: visible;
+    background-color: rgba(234, 208, 169, 0.961);
+    
+    
+}
